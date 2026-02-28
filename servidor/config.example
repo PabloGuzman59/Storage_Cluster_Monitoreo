@@ -1,0 +1,30 @@
+"""
+Archivo de configuración de ejemplo.
+
+INSTRUCCIONES:
+    1. Copia este archivo y renómbralo a config.py
+    2. Rellena los valores con tus datos reales
+"""
+
+CONFIG = {
+    "server": {
+        "host":              "0.0.0.0",
+        "port":              9000,
+        "max_clients":       9,
+        "node_timeout":      60,
+        "watchdog_interval": 15,
+        "socket_timeout":    5,
+    },
+    "database": {
+        "host":     "localhost",
+        "port":     3306,
+        "user":     "",        # ← Tu usuario de MySQL
+        "password": "",        # ← Tu contraseña de MySQL
+        "database": "storage_cluster",
+    },
+    "flask": {
+        "host":  "0.0.0.0",
+        "port":  5000,
+        "debug": False,
+    }
+}
