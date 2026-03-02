@@ -1,0 +1,211 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f1117;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+/* ── Header ── */
+header {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #334155;
+}
+.header-content h1 { font-size: 1.6rem; color: #38bdf8; }
+.header-content .subtitle { color: #94a3b8; font-size: 0.85rem; margin-top: 0.2rem; }
+
+.refresh-control {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+.refresh-control select {
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+}
+.countdown { color: #38bdf8; font-weight: bold; min-width: 2rem; }
+.btn-back {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #334155;
+    border-radius: 6px;
+}
+.btn-back:hover { background: #1e293b; }
+
+/* ── Flash messages ── */
+.flash-container { padding: 0.6rem 2rem; }
+.flash {
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+.flash-success { background: #14532d; border-left: 4px solid #22c55e; }
+.flash-error   { background: #7f1d1d; border-left: 4px solid #ef4444; }
+
+/* ── Sections ── */
+section { padding: 1.5rem 2rem; }
+section h2 { font-size: 1.1rem; color: #94a3b8; margin-bottom: 1rem; letter-spacing: 0.05em; }
+
+/* ── Summary cards ── */
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+}
+.card {
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 1.2rem;
+    text-align: center;
+    border-top: 3px solid;
+    transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-2px); }
+.card-value  { font-size: 1.8rem; font-weight: bold; }
+.card-label  { font-size: 0.75rem; color: #94a3b8; margin-top: 0.3rem; text-transform: uppercase; }
+.card-blue   { border-color: #3b82f6; color: #93c5fd; }
+.card-green  { border-color: #22c55e; color: #86efac; }
+.card-red    { border-color: #ef4444; color: #fca5a5; }
+.card-orange { border-color: #f97316; color: #fdba74; }
+.card-teal   { border-color: #14b8a6; color: #5eead4; }
+.card-gray   { border-color: #64748b; color: #cbd5e1; }
+
+/* ── Message form ── */
+.message-form {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+.message-form select,
+.message-form input[type=text] {
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+}
+.message-form select { min-width: 220px; }
+.message-form input[type=text] { flex: 1; min-width: 260px; }
+.message-form button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+.message-form button:hover { background: #1d4ed8; }
+
+/* ── Table ── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+thead th {
+    background: #1e293b;
+    color: #94a3b8;
+    padding: 0.7rem 0.8rem;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border-bottom: 2px solid #334155;
+}
+tbody tr {
+    border-bottom: 1px solid #1e293b;
+    transition: background 0.15s;
+}
+tbody tr:hover { background: #1a2235; }
+td {
+    padding: 0.65rem 0.8rem;
+    vertical-align: middle;
+}
+
+/* Row status tints */
+.status-no_reporta  td:first-child { border-left: 3px solid #f59e0b; }
+.status-disconnected td:first-child { border-left: 3px solid #6b7280; }
+.status-active       td:first-child { border-left: 3px solid #22c55e; }
+
+/* ── Badges ── */
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.badge-active { background: #14532d; color: #86efac; }
+.badge-warn   { background: #78350f; color: #fde68a; }
+.badge-off    { background: #1f2937; color: #9ca3af; }
+
+/* ── Progress bars ── */
+.progress-bar-container {
+    background: #0f172a;
+    border-radius: 99px;
+    height: 18px;
+    position: relative;
+    overflow: hidden;
+    min-width: 80px;
+}
+.progress-bar {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 0.4s ease;
+}
+.bar-green  { background: linear-gradient(90deg, #16a34a, #22c55e); }
+.bar-orange { background: linear-gradient(90deg, #d97706, #f59e0b); }
+.bar-red    { background: linear-gradient(90deg, #b91c1c, #ef4444); }
+.progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0,0,0,0.8);
+}
+
+/* ── Detail button ── */
+.btn-detail {
+    background: #334155;
+    color: #e2e8f0;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: background 0.2s;
+}
+.btn-detail:hover { background: #475569; }
+
+/* ── Timestamp ── */
+.timestamp { color: #64748b; font-size: 0.78rem; white-space: nowrap; }
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #475569;
+    font-size: 0.8rem;
+    border-top: 1px solid #1e293b;
+}
