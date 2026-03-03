@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Storage Cluster Monitor - CNS</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
     <header>
         <div class="header-content">
@@ -65,7 +67,8 @@
                 <div class="card-value">{{ "%.1f"|format(s.get('cluster_free_gb', 0)) }} GB</div>
                 <div class="card-label">Espacio Libre</div>
             </div>
-            <div class="card {% if s.get('utilization_pct', 0) > 80 %}card-red{% elif s.get('utilization_pct', 0) > 60 %}card-orange{% else %}card-green{% endif %}">
+            <div
+                class="card {% if s.get('utilization_pct', 0) > 80 %}card-red{% elif s.get('utilization_pct', 0) > 60 %}card-orange{% else %}card-green{% endif %}">
                 <div class="card-value">{{ "%.1f"|format(s.get('utilization_pct', 0)) }}%</div>
                 <div class="card-label">Utilización Global</div>
             </div>
@@ -82,7 +85,8 @@
                 <option value="{{ node.client_id }}">{{ node.client_id }} — {{ node.region }}</option>
                 {% endfor %}
             </select>
-            <input type="text" name="message" placeholder="Ej: Reinicie servicio, Verifique espacio en disco..." required>
+            <input type="text" name="message" placeholder="Ej: Reinicie servicio, Verifique espacio en disco..."
+                required>
             <button type="submit">Enviar</button>
         </form>
     </section>
@@ -117,11 +121,11 @@
                     <td>{{ node.ip_address or '—' }}</td>
                     <td>
                         {% if node.status == 'active' %}
-                            <span class="badge badge-active">✅ Activo</span>
+                        <span class="badge badge-active">✅ Activo</span>
                         {% elif node.status == 'no_reporta' %}
-                            <span class="badge badge-warn">⚠️ No Reporta</span>
+                        <span class="badge badge-warn">⚠️ No Reporta</span>
                         {% else %}
-                            <span class="badge badge-off">🔴 Desconectado</span>
+                        <span class="badge badge-off">🔴 Desconectado</span>
                         {% endif %}
                     </td>
                     <td>{{ node.disk_type or '—' }}</td>
@@ -132,7 +136,7 @@
                         {% if node.utilization is not none and node.utilization != '' %}
                         <div class="progress-bar-container">
                             <div class="progress-bar {% if node.utilization|float > 80 %}bar-red{% elif node.utilization|float > 60 %}bar-orange{% else %}bar-green{% endif %}"
-                                 style="width: {{ [node.utilization|float, 100]|min }}%">
+                                style="width: {{ [node.utilization|float, 100]|min }}%">
                             </div>
                             <span class="progress-label">{{ "%.1f"|format(node.utilization|float) }}%</span>
                         </div>
@@ -159,4 +163,5 @@
 
     <script src="{{ url_for('static', filename='css/dashboard.js') }}"></script>
 </body>
+
 </html>

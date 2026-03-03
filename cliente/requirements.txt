@@ -1,0 +1,12 @@
+# =============================================================================
+# DEPENDENCIAS - AGENTE CLIENTE
+# Práctica 1 - Storage Cluster Monitor (CNS)
+# =============================================================================
+# Instalación: pip install -r requirements.txt
+#
+# Notas:
+#   - psutil: multiplataforma, funciona en Windows y Linux sin cambios
+#   - No se requieren dependencias adicionales para el cliente base
+# =============================================================================
+
+psutil>=5.9.0

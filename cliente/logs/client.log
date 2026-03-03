@@ -1,0 +1,32 @@
+2026-03-03 11:00:57 | INFO     | [INIT] Agente iniciado | ID=CNS_REGIONAL_01 | Intervalo=10s
+2026-03-03 11:00:57 | INFO     | [CONN] Conectado a 192.168.0.112:9000
+2026-03-03 11:10:31 | INFO     | [INIT] ID=CNS_REGIONAL_01 | Región=La Paz | Intervalo=10s
+2026-03-03 11:10:31 | INFO     | [CONN] Conectado a 192.168.0.112:9000
+2026-03-03 11:10:31 | INFO     | [REG] Registro enviado | ID=CNS_REGIONAL_01 | Región=La Paz | IP=192.168.0.112
+2026-03-03 11:17:40 | INFO     | [INIT] ID=CNS_REGIONAL_01 | Región=La Paz | Intervalo=10s
+2026-03-03 11:17:40 | INFO     | [CONN] Conectado a 192.168.0.112:9000
+2026-03-03 11:17:40 | INFO     | [REG] Registro enviado | ID=CNS_REGIONAL_01 | Región=La Paz | IP=192.168.0.112
+2026-03-03 11:42:45 | INFO     | [INIT] ID=CNS_REGIONAL_01 | Región=La Paz | Intervalo=10s
+2026-03-03 11:42:45 | INFO     | [CONN] Conectado a 192.168.0.112:9000
+2026-03-03 11:42:45 | INFO     | [REG] Registro enviado | ID=CNS_REGIONAL_01 | Región=La Paz | IP=192.168.0.112
+2026-03-03 11:42:45 | INFO     | [SERVER→CLIENT] 2026-03-03 11:42:45 | {"type": "register_ack", "status": "ok", "message": "Bienvenido al cluster, CNS_REGIONAL_01"}
+2026-03-03 11:42:45 | INFO     | [SERVER→CLIENT] 2026-03-03 11:42:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:42:45.647718"}
+2026-03-03 11:42:55 | INFO     | [SERVER→CLIENT] 2026-03-03 11:42:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:42:55.650482"}
+2026-03-03 11:43:05 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:05.653662"}
+2026-03-03 11:43:15 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:15.658674"}
+2026-03-03 11:43:25 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:25.672503"}
+2026-03-03 11:43:35 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:35.679274"}
+2026-03-03 11:43:45 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:45.689639"}
+2026-03-03 11:43:55 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:55.699077"}
+2026-03-03 11:44:05 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:05.706730"}
+2026-03-03 11:44:15 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:15.709614"}
+2026-03-03 11:44:25 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:25.714671"}
+2026-03-03 11:44:35 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:35.715350"}
+2026-03-03 11:44:45 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:45.728979"}
+2026-03-03 11:44:55 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:55.745085"}
+2026-03-03 11:45:05 | INFO     | [SERVER→CLIENT] 2026-03-03 11:45:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:45:05.754233"}
+2026-03-03 11:45:15 | INFO     | [SERVER→CLIENT] 2026-03-03 11:45:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:45:15.768414"}
+2026-03-03 11:45:25 | INFO     | [SERVER→CLIENT] 2026-03-03 11:45:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:45:25.777047"}
+2026-03-03 11:45:35 | INFO     | [SERVER→CLIENT] 2026-03-03 11:45:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:45:35.788369"}
+2026-03-03 11:45:45 | INFO     | [SERVER→CLIENT] 2026-03-03 11:45:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:45:45.796714"}
+2026-03-03 11:45:46 | INFO     | [CONN] Conexión rota (listener).
