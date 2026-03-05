@@ -1,7 +1,7 @@
 {
     "client_id": "CNS_REGIONAL_01",
     "region": "La Paz",
-    "server_host": "192.168.0.112",
+"server_host": "127.0.0.1",
     "server_port": 9000,
     "send_interval_sec": 10,
     "log_file": "logs/client.log"
