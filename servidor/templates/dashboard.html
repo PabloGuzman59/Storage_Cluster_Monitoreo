@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Cluster Monitor - CNS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🗄️ Storage Cluster Monitor</h1>
+            <p class="subtitle">Caja Nacional de Salud — Nodo Central de Monitoreo</p>
+        </div>
+        <div class="refresh-control">
+            <label for="refresh-interval">Auto-refresh:</label>
+            <select id="refresh-interval">
+                <option value="0">Desactivado</option>
+                <option value="5">5 seg</option>
+                <option value="10" selected>10 seg</option>
+                <option value="30">30 seg</option>
+                <option value="60">1 min</option>
+            </select>
+            <span id="refresh-countdown" class="countdown"></span>
+        </div>
+    </header>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div class="flash-container">
+        {% for cat, msg in messages %}
+        <div class="flash flash-{{ cat }}">{{ msg }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+
+    <!-- ── Resumen del Cluster ── -->
+    <section class="summary-section" id="summary-section">
+        <h2>📊 Resumen del Cluster</h2>
+        <div class="summary-grid" id="summary-grid">
+            {% set s = summary %}
+            <div class="card card-blue">
+                <div class="card-value">{{ s.get('total_nodes', 0) }}</div>
+                <div class="card-label">Total Nodos</div>
+            </div>
+            <div class="card card-green">
+                <div class="card-value">{{ s.get('active_nodes', 0) }}</div>
+                <div class="card-label">Nodos Activos</div>
+            </div>
+            <div class="card card-red">
+                <div class="card-value">{{ s.get('unreported_nodes', 0) }}</div>
+                <div class="card-label">No Reportan</div>
+            </div>
+            <div class="card card-gray">
+                <div class="card-value">{{ "%.1f"|format(s.get('cluster_total_gb', 0)) }} GB</div>
+                <div class="card-label">Capacidad Total</div>
+            </div>
+            <div class="card card-orange">
+                <div class="card-value">{{ "%.1f"|format(s.get('cluster_used_gb', 0)) }} GB</div>
+                <div class="card-label">Espacio Usado</div>
+            </div>
+            <div class="card card-teal">
+                <div class="card-value">{{ "%.1f"|format(s.get('cluster_free_gb', 0)) }} GB</div>
+                <div class="card-label">Espacio Libre</div>
+            </div>
+            <div
+                class="card {% if s.get('utilization_pct', 0) > 80 %}card-red{% elif s.get('utilization_pct', 0) > 60 %}card-orange{% else %}card-green{% endif %}">
+                <div class="card-value">{{ "%.1f"|format(s.get('utilization_pct', 0)) }}%</div>
+                <div class="card-label">Utilización Global</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Envío de mensajes ── -->
+    <section class="message-section">
+        <h2>📨 Enviar Mensaje a Nodo</h2>
+        <form method="POST" action="/send_message" class="message-form">
+            <select name="client_id" required>
+                <option value="__broadcast__">📢 Todos los nodos</option>
+                {% for node in nodes %}
+                <option value="{{ node.client_id }}">{{ node.client_id }} — {{ node.region }}</option>
+                {% endfor %}
+            </select>
+            <input type="text" name="message" placeholder="Ej: Reinicie servicio, Verifique espacio en disco..."
+                required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- ── Tabla de Nodos ── -->
+    <section class="nodes-section">
+        <h2>🖥️ Estado de Nodos Regionales</h2>
+        <table id="nodes-table">
+            <thead>
+                <tr>
+                    <th>ID Nodo</th>
+                    <th>Región</th>
+                    <th>Hostname</th>
+                    <th>IP</th>
+                    <th>Estado</th>
+                    <th>Disco</th>
+                    <th>Total (GB)</th>
+                    <th>Usado (GB)</th>
+                    <th>Libre (GB)</th>
+                    <th>Utilización</th>
+                    <th>IOPS</th>
+                    <th>Último Reporte</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tbody id="nodes-tbody">
+                {% for node in nodes %}
+                <tr class="node-row status-{{ node.status }}">
+                    <td><strong>{{ node.client_id }}</strong></td>
+                    <td>{{ node.region or '—' }}</td>
+                    <td>{{ node.hostname or '—' }}</td>
+                    <td>{{ node.ip_address or '—' }}</td>
+                    <td>
+                        {% if node.status == 'active' %}
+                        <span class="badge badge-active">✅ Activo</span>
+                        {% elif node.status == 'no_reporta' %}
+                        <span class="badge badge-warn">⚠️ No Reporta</span>
+                        {% else %}
+                        <span class="badge badge-off">🔴 Desconectado</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ node.disk_type or '—' }}</td>
+                    <td>{{ "%.1f"|format(node.total_gb|float) if node.total_gb else '—' }}</td>
+                    <td>{{ "%.1f"|format(node.used_gb|float) if node.used_gb else '—' }}</td>
+                    <td>{{ "%.1f"|format(node.free_gb|float) if node.free_gb else '—' }}</td>
+                    <td>
+                        {% if node.utilization is not none and node.utilization != '' %}
+                        <div class="progress-bar-container">
+                            <div class="progress-bar {% if node.utilization|float > 80 %}bar-red{% elif node.utilization|float > 60 %}bar-orange{% else %}bar-green{% endif %}"
+                                style="width: {{ [node.utilization|float, 100]|min }}%">
+                            </div>
+                            <span class="progress-label">{{ "%.1f"|format(node.utilization|float) }}%</span>
+                        </div>
+                        {% else %}—{% endif %}
+                    </td>
+                    <td>{{ node.iops or '—' }}</td>
+                    <td class="timestamp">{{ node.reported_at or node.last_seen_at or '—' }}</td>
+                    <td><a href="/node/{{ node.client_id }}" class="btn-detail">Ver</a></td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="13" style="text-align:center; padding: 2rem; color: #888;">
+                        Esperando conexión de nodos clientes...
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Storage Cluster Monitor · CNS · <span id="current-time"></span></p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='css/dashboard.js') }}"></script>
+</body>
+
+</html>

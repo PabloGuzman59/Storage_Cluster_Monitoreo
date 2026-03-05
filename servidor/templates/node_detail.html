@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Historial — {{ client_id }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📈 Historial de Métricas</h1>
+            <p class="subtitle">Nodo: <strong>{{ client_id }}</strong></p>
+        </div>
+        <a href="/" class="btn-back">← Volver al Dashboard</a>
+    </header>
+
+    <section class="nodes-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Disco</th>
+                    <th>Tipo</th>
+                    <th>Total (GB)</th>
+                    <th>Usado (GB)</th>
+                    <th>Libre (GB)</th>
+                    <th>Utilización %</th>
+                    <th>IOPS</th>
+                    <th>Fecha Reporte</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in history %}
+                <tr>
+                    <td>{{ row.disk_name }}</td>
+                    <td>{{ row.disk_type }}</td>
+                    <td>{{ "%.1f"|format(row.total_gb|float) }}</td>
+                    <td>{{ "%.1f"|format(row.used_gb|float) }}</td>
+                    <td>{{ "%.1f"|format(row.free_gb|float) }}</td>
+                    <td>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar {% if row.utilization|float > 80 %}bar-red{% elif row.utilization|float > 60 %}bar-orange{% else %}bar-green{% endif %}"
+                                 style="width: {{ [row.utilization|float, 100]|min }}%">
+                            </div>
+                            <span class="progress-label">{{ "%.1f"|format(row.utilization|float) }}%</span>
+                        </div>
+                    </td>
+                    <td>{{ row.iops }}</td>
+                    <td class="timestamp">{{ row.reported_at }}</td>
+                </tr>
+                {% else %}
+                <tr><td colspan="8" style="text-align:center;padding:2rem;color:#888;">Sin historial disponible.</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

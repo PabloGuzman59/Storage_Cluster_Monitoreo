@@ -1,0 +1,169 @@
+2026-03-03 11:00:57 | INFO     | [INIT] Agente iniciado | ID=CNS_REGIONAL_01 | Intervalo=10s
+2026-03-03 11:00:57 | INFO     | [CONN] Conectado a 192.168.0.112:9000
+2026-03-03 11:10:31 | INFO     | [INIT] ID=CNS_REGIONAL_01 | Región=La Paz | Intervalo=10s
+2026-03-03 11:10:31 | INFO     | [CONN] Conectado a 192.168.0.112:9000
+2026-03-03 11:10:31 | INFO     | [REG] Registro enviado | ID=CNS_REGIONAL_01 | Región=La Paz | IP=192.168.0.112
+2026-03-03 11:17:40 | INFO     | [INIT] ID=CNS_REGIONAL_01 | Región=La Paz | Intervalo=10s
+2026-03-03 11:17:40 | INFO     | [CONN] Conectado a 192.168.0.112:9000
+2026-03-03 11:17:40 | INFO     | [REG] Registro enviado | ID=CNS_REGIONAL_01 | Región=La Paz | IP=192.168.0.112
+2026-03-03 11:42:45 | INFO     | [INIT] ID=CNS_REGIONAL_01 | Región=La Paz | Intervalo=10s
+2026-03-03 11:42:45 | INFO     | [CONN] Conectado a 192.168.0.112:9000
+2026-03-03 11:42:45 | INFO     | [REG] Registro enviado | ID=CNS_REGIONAL_01 | Región=La Paz | IP=192.168.0.112
+2026-03-03 11:42:45 | INFO     | [SERVER→CLIENT] 2026-03-03 11:42:45 | {"type": "register_ack", "status": "ok", "message": "Bienvenido al cluster, CNS_REGIONAL_01"}
+2026-03-03 11:42:45 | INFO     | [SERVER→CLIENT] 2026-03-03 11:42:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:42:45.647718"}
+2026-03-03 11:42:55 | INFO     | [SERVER→CLIENT] 2026-03-03 11:42:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:42:55.650482"}
+2026-03-03 11:43:05 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:05.653662"}
+2026-03-03 11:43:15 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:15.658674"}
+2026-03-03 11:43:25 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:25.672503"}
+2026-03-03 11:43:35 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:35.679274"}
+2026-03-03 11:43:45 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:45.689639"}
+2026-03-03 11:43:55 | INFO     | [SERVER→CLIENT] 2026-03-03 11:43:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:43:55.699077"}
+2026-03-03 11:44:05 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:05.706730"}
+2026-03-03 11:44:15 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:15.709614"}
+2026-03-03 11:44:25 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:25.714671"}
+2026-03-03 11:44:35 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:35.715350"}
+2026-03-03 11:44:45 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:45.728979"}
+2026-03-03 11:44:55 | INFO     | [SERVER→CLIENT] 2026-03-03 11:44:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:44:55.745085"}
+2026-03-03 11:45:05 | INFO     | [SERVER→CLIENT] 2026-03-03 11:45:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:45:05.754233"}
+2026-03-03 11:45:15 | INFO     | [SERVER→CLIENT] 2026-03-03 11:45:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:45:15.768414"}
+2026-03-03 11:45:25 | INFO     | [SERVER→CLIENT] 2026-03-03 11:45:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:45:25.777047"}
+2026-03-03 11:45:35 | INFO     | [SERVER→CLIENT] 2026-03-03 11:45:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:45:35.788369"}
+2026-03-03 11:45:45 | INFO     | [SERVER→CLIENT] 2026-03-03 11:45:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-03T11:45:45.796714"}
+2026-03-03 11:45:46 | INFO     | [CONN] Conexión rota (listener).
+2026-03-04 23:23:14 | INFO     | [INIT] ID=CNS_REGIONAL_01 | Región=La Paz | Intervalo=10s
+2026-03-04 23:23:14 | INFO     | [CONN] Conectado a 127.0.0.1:9000
+2026-03-04 23:23:14 | INFO     | [REG] Registro enviado | ID=CNS_REGIONAL_01 | Región=La Paz | IP=127.0.0.1
+2026-03-04 23:23:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:23:14 | {"type": "register_ack", "status": "ok", "message": "Bienvenido al cluster, CNS_REGIONAL_01"}
+2026-03-04 23:23:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:23:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:23:14.112955"}
+2026-03-04 23:23:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:23:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:23:24.122000"}
+2026-03-04 23:23:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:23:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:23:34.127507"}
+2026-03-04 23:23:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:23:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:23:44.127791"}
+2026-03-04 23:23:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:23:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:23:54.141153"}
+2026-03-04 23:24:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:24:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:24:04.142234"}
+2026-03-04 23:24:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:24:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:24:14.149978"}
+2026-03-04 23:24:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:24:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:24:24.155201"}
+2026-03-04 23:24:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:24:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:24:34.161141"}
+2026-03-04 23:24:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:24:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:24:44.169997"}
+2026-03-04 23:24:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:24:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:24:54.175574"}
+2026-03-04 23:25:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:25:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:25:04.185989"}
+2026-03-04 23:25:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:25:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:25:14.199324"}
+2026-03-04 23:25:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:25:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:25:24.203649"}
+2026-03-04 23:25:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:25:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:25:34.216817"}
+2026-03-04 23:25:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:25:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:25:44.223288"}
+2026-03-04 23:25:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:25:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:25:54.233341"}
+2026-03-04 23:26:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:26:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:26:04.244801"}
+2026-03-04 23:26:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:26:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:26:14.248399"}
+2026-03-04 23:26:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:26:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:26:24.258766"}
+2026-03-04 23:26:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:26:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:26:34.264443"}
+2026-03-04 23:26:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:26:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:26:44.274111"}
+2026-03-04 23:26:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:26:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:26:54.277537"}
+2026-03-04 23:27:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:27:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:27:04.292198"}
+2026-03-04 23:27:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:27:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:27:14.296797"}
+2026-03-04 23:27:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:27:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:27:24.309325"}
+2026-03-04 23:27:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:27:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:27:34.322263"}
+2026-03-04 23:27:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:27:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:27:44.333961"}
+2026-03-04 23:27:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:27:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:27:54.334645"}
+2026-03-04 23:28:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:28:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:28:04.336478"}
+2026-03-04 23:28:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:28:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:28:14.337554"}
+2026-03-04 23:28:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:28:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:28:24.347428"}
+2026-03-04 23:28:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:28:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:28:34.351922"}
+2026-03-04 23:28:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:28:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:28:44.360710"}
+2026-03-04 23:28:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:28:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:28:54.373595"}
+2026-03-04 23:29:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:29:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:29:04.378538"}
+2026-03-04 23:29:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:29:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:29:14.386211"}
+2026-03-04 23:29:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:29:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:29:24.399244"}
+2026-03-04 23:29:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:29:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:29:34.414428"}
+2026-03-04 23:29:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:29:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:29:44.422669"}
+2026-03-04 23:29:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:29:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:29:54.438862"}
+2026-03-04 23:30:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:30:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:30:04.451232"}
+2026-03-04 23:30:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:30:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:30:14.465591"}
+2026-03-04 23:30:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:30:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:30:24.467304"}
+2026-03-04 23:30:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:30:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:30:34.480064"}
+2026-03-04 23:30:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:30:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:30:44.483508"}
+2026-03-04 23:30:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:30:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:30:54.489867"}
+2026-03-04 23:31:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:31:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:31:04.495815"}
+2026-03-04 23:31:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:31:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:31:14.496458"}
+2026-03-04 23:31:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:31:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:31:24.498003"}
+2026-03-04 23:31:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:31:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:31:34.506743"}
+2026-03-04 23:31:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:31:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:31:44.509558"}
+2026-03-04 23:31:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:31:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:31:54.522703"}
+2026-03-04 23:32:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:32:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:32:04.530348"}
+2026-03-04 23:32:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:32:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:32:14.536096"}
+2026-03-04 23:32:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:32:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:32:24.538782"}
+2026-03-04 23:32:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:32:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:32:34.542232"}
+2026-03-04 23:32:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:32:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:32:44.546095"}
+2026-03-04 23:32:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:32:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:32:54.561508"}
+2026-03-04 23:33:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:33:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:33:04.570869"}
+2026-03-04 23:33:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:33:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:33:14.586063"}
+2026-03-04 23:33:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:33:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:33:24.600468"}
+2026-03-04 23:33:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:33:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:33:34.606849"}
+2026-03-04 23:33:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:33:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:33:44.621224"}
+2026-03-04 23:33:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:33:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:33:54.623345"}
+2026-03-04 23:34:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:34:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:34:04.635614"}
+2026-03-04 23:34:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:34:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:34:14.649545"}
+2026-03-04 23:34:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:34:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:34:24.660574"}
+2026-03-04 23:34:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:34:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:34:34.662892"}
+2026-03-04 23:34:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:34:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:34:44.677877"}
+2026-03-04 23:34:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:34:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:34:54.679868"}
+2026-03-04 23:35:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:35:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:35:04.683052"}
+2026-03-04 23:35:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:35:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:35:14.694126"}
+2026-03-04 23:35:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:35:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:35:24.694722"}
+2026-03-04 23:35:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:35:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:35:34.709325"}
+2026-03-04 23:35:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:35:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:35:44.717690"}
+2026-03-04 23:35:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:35:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:35:54.719967"}
+2026-03-04 23:36:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:36:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:36:04.725936"}
+2026-03-04 23:36:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:36:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:36:14.737989"}
+2026-03-04 23:36:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:36:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:36:24.745204"}
+2026-03-04 23:36:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:36:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:36:34.753600"}
+2026-03-04 23:36:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:36:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:36:44.766514"}
+2026-03-04 23:36:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:36:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:36:54.776125"}
+2026-03-04 23:37:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:37:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:37:04.778953"}
+2026-03-04 23:37:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:37:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:37:14.792168"}
+2026-03-04 23:37:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:37:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:37:24.803555"}
+2026-03-04 23:37:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:37:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:37:34.808552"}
+2026-03-04 23:37:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:37:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:37:44.815620"}
+2026-03-04 23:37:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:37:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:37:54.821455"}
+2026-03-04 23:38:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:38:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:38:04.832928"}
+2026-03-04 23:38:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:38:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:38:14.846202"}
+2026-03-04 23:38:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:38:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:38:24.852390"}
+2026-03-04 23:38:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:38:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:38:34.864055"}
+2026-03-04 23:38:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:38:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:38:44.877768"}
+2026-03-04 23:38:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:38:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:38:54.887446"}
+2026-03-04 23:39:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:39:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:39:04.895999"}
+2026-03-04 23:39:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:39:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:39:14.901819"}
+2026-03-04 23:39:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:39:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:39:24.913956"}
+2026-03-04 23:39:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:39:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:39:34.926629"}
+2026-03-04 23:39:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:39:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:39:44.935635"}
+2026-03-04 23:39:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:39:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:39:54.938671"}
+2026-03-04 23:40:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:40:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:40:04.944272"}
+2026-03-04 23:40:14 | INFO     | [SERVER→CLIENT] 2026-03-04 23:40:14 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:40:14.949843"}
+2026-03-04 23:40:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:40:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:40:24.951115"}
+2026-03-04 23:40:34 | INFO     | [SERVER→CLIENT] 2026-03-04 23:40:34 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:40:34.962448"}
+2026-03-04 23:40:44 | INFO     | [SERVER→CLIENT] 2026-03-04 23:40:44 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:40:44.972076"}
+2026-03-04 23:40:54 | INFO     | [SERVER→CLIENT] 2026-03-04 23:40:54 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:40:54.979711"}
+2026-03-04 23:41:04 | INFO     | [SERVER→CLIENT] 2026-03-04 23:41:04 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:41:04.980914"}
+2026-03-04 23:41:15 | INFO     | [SERVER→CLIENT] 2026-03-04 23:41:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:41:14.987059"}
+2026-03-04 23:41:24 | INFO     | [SERVER→CLIENT] 2026-03-04 23:41:24 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:41:24.989770"}
+2026-03-04 23:41:35 | INFO     | [SERVER→CLIENT] 2026-03-04 23:41:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:41:35.005042"}
+2026-03-04 23:41:45 | INFO     | [SERVER→CLIENT] 2026-03-04 23:41:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:41:45.009305"}
+2026-03-04 23:41:55 | INFO     | [SERVER→CLIENT] 2026-03-04 23:41:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:41:55.024307"}
+2026-03-04 23:42:05 | INFO     | [SERVER→CLIENT] 2026-03-04 23:42:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:42:05.038510"}
+2026-03-04 23:42:15 | INFO     | [SERVER→CLIENT] 2026-03-04 23:42:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:42:15.054596"}
+2026-03-04 23:42:25 | INFO     | [SERVER→CLIENT] 2026-03-04 23:42:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:42:25.058514"}
+2026-03-04 23:42:35 | INFO     | [SERVER→CLIENT] 2026-03-04 23:42:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:42:35.060085"}
+2026-03-04 23:42:45 | INFO     | [SERVER→CLIENT] 2026-03-04 23:42:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:42:45.060745"}
+2026-03-04 23:42:55 | INFO     | [SERVER→CLIENT] 2026-03-04 23:42:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:42:55.064214"}
+2026-03-04 23:43:05 | INFO     | [SERVER→CLIENT] 2026-03-04 23:43:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:43:05.072825"}
+2026-03-04 23:43:15 | INFO     | [SERVER→CLIENT] 2026-03-04 23:43:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:43:15.086888"}
+2026-03-04 23:43:25 | INFO     | [SERVER→CLIENT] 2026-03-04 23:43:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:43:25.097154"}
+2026-03-04 23:43:35 | INFO     | [SERVER→CLIENT] 2026-03-04 23:43:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:43:35.102058"}
+2026-03-04 23:43:45 | INFO     | [SERVER→CLIENT] 2026-03-04 23:43:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:43:45.110880"}
+2026-03-04 23:43:55 | INFO     | [SERVER→CLIENT] 2026-03-04 23:43:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:43:55.124011"}
+2026-03-04 23:44:05 | INFO     | [SERVER→CLIENT] 2026-03-04 23:44:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:44:05.123941"}
+2026-03-04 23:44:15 | INFO     | [SERVER→CLIENT] 2026-03-04 23:44:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:44:15.149281"}
+2026-03-04 23:44:25 | INFO     | [SERVER→CLIENT] 2026-03-04 23:44:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:44:25.150393"}
+2026-03-04 23:44:35 | INFO     | [SERVER→CLIENT] 2026-03-04 23:44:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:44:35.166666"}
+2026-03-04 23:44:45 | INFO     | [SERVER→CLIENT] 2026-03-04 23:44:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-04T23:44:45.178120"}
+2026-03-04 23:44:55 | INFO     | [CONN] Conexión rota (listener).
+2026-03-04 23:44:55 | INFO     | [CONN] Socket cerrado.
+2026-03-04 23:44:55 | INFO     | [SHUTDOWN] Agente detenido.
