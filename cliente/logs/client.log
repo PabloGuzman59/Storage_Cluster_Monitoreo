@@ -167,3 +167,69 @@
 2026-03-04 23:44:55 | INFO     | [CONN] Conexión rota (listener).
 2026-03-04 23:44:55 | INFO     | [CONN] Socket cerrado.
 2026-03-04 23:44:55 | INFO     | [SHUTDOWN] Agente detenido.
+2026-03-05 14:28:13 | INFO     | [INIT] ID=CNS_REGIONAL_01 | Región=La Paz | Intervalo=10s
+2026-03-05 14:28:15 | INFO     | [ERROR] No se pudo conectar a 127.0.0.1:9000 → [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+2026-03-05 14:34:05 | INFO     | [INIT] ID=CNS_REGIONAL_01 | Región=La Paz | Intervalo=10s
+2026-03-05 14:34:05 | INFO     | [CONN] Conectado a 127.0.0.1:9000
+2026-03-05 14:34:05 | INFO     | [REG] Registro enviado | ID=CNS_REGIONAL_01 | Región=La Paz | IP=127.0.0.1
+2026-03-05 14:34:05 | INFO     | [SERVER→CLIENT] 2026-03-05 14:34:05 | {"type": "register_ack", "status": "ok", "message": "Bienvenido al cluster, CNS_REGIONAL_01"}
+2026-03-05 14:34:05 | INFO     | [SERVER→CLIENT] 2026-03-05 14:34:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:34:05.243348"}
+2026-03-05 14:34:15 | INFO     | [SERVER→CLIENT] 2026-03-05 14:34:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:34:15.251413"}
+2026-03-05 14:34:25 | INFO     | [SERVER→CLIENT] 2026-03-05 14:34:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:34:25.254602"}
+2026-03-05 14:34:35 | INFO     | [SERVER→CLIENT] 2026-03-05 14:34:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:34:35.256747"}
+2026-03-05 14:34:45 | INFO     | [SERVER→CLIENT] 2026-03-05 14:34:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:34:45.260015"}
+2026-03-05 14:34:55 | INFO     | [SERVER→CLIENT] 2026-03-05 14:34:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:34:55.271185"}
+2026-03-05 14:35:05 | INFO     | [SERVER→CLIENT] 2026-03-05 14:35:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:35:05.273295"}
+2026-03-05 14:35:15 | INFO     | [SERVER→CLIENT] 2026-03-05 14:35:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:35:15.275370"}
+2026-03-05 14:35:25 | INFO     | [SERVER→CLIENT] 2026-03-05 14:35:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:35:25.286616"}
+2026-03-05 14:35:35 | INFO     | [SERVER→CLIENT] 2026-03-05 14:35:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:35:35.288880"}
+2026-03-05 14:35:45 | INFO     | [SERVER→CLIENT] 2026-03-05 14:35:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:35:45.293798"}
+2026-03-05 14:35:55 | INFO     | [SERVER→CLIENT] 2026-03-05 14:35:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:35:55.295041"}
+2026-03-05 14:36:05 | INFO     | [SERVER→CLIENT] 2026-03-05 14:36:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:36:05.298288"}
+2026-03-05 14:36:15 | INFO     | [SERVER→CLIENT] 2026-03-05 14:36:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:36:15.302479"}
+2026-03-05 14:36:25 | INFO     | [SERVER→CLIENT] 2026-03-05 14:36:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:36:25.306120"}
+2026-03-05 14:36:35 | INFO     | [SERVER→CLIENT] 2026-03-05 14:36:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:36:35.317044"}
+2026-03-05 14:36:45 | INFO     | [SERVER→CLIENT] 2026-03-05 14:36:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:36:45.322799"}
+2026-03-05 14:36:55 | INFO     | [SERVER→CLIENT] 2026-03-05 14:36:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:36:55.325806"}
+2026-03-05 14:37:05 | INFO     | [SERVER→CLIENT] 2026-03-05 14:37:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:37:05.327764"}
+2026-03-05 14:37:15 | INFO     | [SERVER→CLIENT] 2026-03-05 14:37:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:37:15.331144"}
+2026-03-05 14:37:25 | INFO     | [SERVER→CLIENT] 2026-03-05 14:37:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:37:25.336041"}
+2026-03-05 14:37:35 | INFO     | [SERVER→CLIENT] 2026-03-05 14:37:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:37:35.340888"}
+2026-03-05 14:37:45 | INFO     | [SERVER→CLIENT] 2026-03-05 14:37:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:37:45.355062"}
+2026-03-05 14:37:55 | INFO     | [SERVER→CLIENT] 2026-03-05 14:37:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:37:55.364811"}
+2026-03-05 14:38:05 | INFO     | [SERVER→CLIENT] 2026-03-05 14:38:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:38:05.376360"}
+2026-03-05 14:38:15 | INFO     | [SERVER→CLIENT] 2026-03-05 14:38:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:38:15.383601"}
+2026-03-05 14:38:25 | INFO     | [SERVER→CLIENT] 2026-03-05 14:38:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:38:25.389735"}
+2026-03-05 14:38:35 | INFO     | [SERVER→CLIENT] 2026-03-05 14:38:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:38:35.405488"}
+2026-03-05 14:38:45 | INFO     | [SERVER→CLIENT] 2026-03-05 14:38:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:38:45.424250"}
+2026-03-05 14:38:55 | INFO     | [SERVER→CLIENT] 2026-03-05 14:38:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:38:55.434076"}
+2026-03-05 14:39:05 | INFO     | [SERVER→CLIENT] 2026-03-05 14:39:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:39:05.448321"}
+2026-03-05 14:39:15 | INFO     | [SERVER→CLIENT] 2026-03-05 14:39:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:39:15.448584"}
+2026-03-05 14:39:25 | INFO     | [SERVER→CLIENT] 2026-03-05 14:39:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:39:25.452328"}
+2026-03-05 14:39:35 | INFO     | [SERVER→CLIENT] 2026-03-05 14:39:35 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:39:35.456071"}
+2026-03-05 14:39:45 | INFO     | [SERVER→CLIENT] 2026-03-05 14:39:45 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:39:45.459420"}
+2026-03-05 14:39:55 | INFO     | [SERVER→CLIENT] 2026-03-05 14:39:55 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:39:55.472358"}
+2026-03-05 14:40:05 | INFO     | [SERVER→CLIENT] 2026-03-05 14:40:05 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:40:05.476614"}
+2026-03-05 14:40:15 | INFO     | [SERVER→CLIENT] 2026-03-05 14:40:15 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:40:15.481437"}
+2026-03-05 14:40:25 | INFO     | [SERVER→CLIENT] 2026-03-05 14:40:25 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:40:25.493162"}
+2026-03-05 14:40:35 | INFO     | [CONN] Socket cerrado.
+2026-03-05 14:40:35 | INFO     | [CONN] Conexión rota (listener).
+2026-03-05 14:40:35 | INFO     | [SHUTDOWN] Agente detenido.
+2026-03-05 14:40:37 | INFO     | [INIT] ID=CNS_REGIONAL_02 | Región=Santa Cruz | Intervalo=10s
+2026-03-05 14:40:37 | INFO     | [CONN] Conectado a 127.0.0.1:9000
+2026-03-05 14:40:37 | INFO     | [REG] Registro enviado | ID=CNS_REGIONAL_02 | Región=Santa Cruz | IP=127.0.0.1
+2026-03-05 14:40:37 | INFO     | [SERVER→CLIENT] 2026-03-05 14:40:37 | {"type": "register_ack", "status": "ok", "message": "Bienvenido al cluster, CNS_REGIONAL_02"}
+2026-03-05 14:40:37 | INFO     | [SERVER→CLIENT] 2026-03-05 14:40:37 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:40:37.519795"}
+2026-03-05 14:40:47 | INFO     | [SERVER→CLIENT] 2026-03-05 14:40:47 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:40:47.523839"}
+2026-03-05 14:40:57 | INFO     | [CONN] Socket cerrado.
+2026-03-05 14:40:57 | INFO     | [CONN] Conexión rota (listener).
+2026-03-05 14:40:57 | INFO     | [SHUTDOWN] Agente detenido.
+2026-03-05 14:40:58 | INFO     | [INIT] ID=CNS_REGIONAL_01 | Región=La Paz | Intervalo=10s
+2026-03-05 14:40:58 | INFO     | [CONN] Conectado a 127.0.0.1:9000
+2026-03-05 14:40:58 | INFO     | [REG] Registro enviado | ID=CNS_REGIONAL_01 | Región=La Paz | IP=127.0.0.1
+2026-03-05 14:40:58 | INFO     | [SERVER→CLIENT] 2026-03-05 14:40:58 | {"type": "register_ack", "status": "ok", "message": "Bienvenido al cluster, CNS_REGIONAL_01"}
+2026-03-05 14:40:58 | INFO     | [SERVER→CLIENT] 2026-03-05 14:40:58 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:40:58.737791"}
+2026-03-05 14:41:08 | INFO     | [SERVER→CLIENT] 2026-03-05 14:41:08 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:41:08.739959"}
+2026-03-05 14:41:18 | INFO     | [SERVER→CLIENT] 2026-03-05 14:41:18 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:41:18.752331"}
+2026-03-05 14:41:28 | INFO     | [SERVER→CLIENT] 2026-03-05 14:41:28 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:41:28.753618"}
+2026-03-05 14:41:38 | INFO     | [SERVER→CLIENT] 2026-03-05 14:41:38 | {"type": "metrics_ack", "status": "ok", "timestamp": "2026-03-05T14:41:38.754530"}

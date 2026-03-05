@@ -82,7 +82,7 @@ export default function NodeHistory({ client_id, region, onClose }) {
           <button onClick={onClose} style={{ background: 'none', border: 'none', fontSize: '28px', cursor: 'pointer', color: '#a1a1aa', transition: 'color 0.2s', padding: 0, lineHeight: 1 }} onMouseEnter={(e)=>e.target.style.color='white'} onMouseLeave={(e)=>e.target.style.color='#a1a1aa'}>✖</button>
         </div>
         
-        <h2 style={{ color: '#00f3ff', margin: '0 0 5px 0', textShadow: '0 0 10px rgba(0,243,255,0.4)', letterSpacing: '1px' }}>{region.toUpperCase()} // LINK</h2>
+        <h2 style={{ color: '#00f3ff', margin: '0 0 5px 0', textShadow: '0 0 10px rgba(0,243,255,0.4)', letterSpacing: '1px' }}>{region.toUpperCase()}</h2>
         
         <p style={{ color: '#a1a1aa', fontSize: '12px', marginTop: '20px', marginBottom: '15px', letterSpacing: '2px' }}>ESTADO ACTUAL DEL DISCO</p>
         
@@ -113,7 +113,7 @@ export default function NodeHistory({ client_id, region, onClose }) {
           </div>
         </div>
 
-        <p style={{ color: '#00f3ff', fontSize: '12px', marginBottom: '10px', letterSpacing: '2px', textShadow: '0 0 5px rgba(0,243,255,0.4)' }}>HISTORIAL ACUMULADO DESDE CONEXIÓN</p>
+        <p style={{ color: '#00f3ff', fontSize: '12px', marginBottom: '10px', letterSpacing: '2px', textShadow: '0 0 5px rgba(0,243,255,0.4)' }}>HISTORIAL ACUMULADO</p>
         <div style={{ height: '200px', marginBottom: '30px', background: 'rgba(0,0,0,0.3)', borderRadius: '12px', padding: '10px', border: '1px solid rgba(255,255,255,0.05)' }}>
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart data={longHistory}>
