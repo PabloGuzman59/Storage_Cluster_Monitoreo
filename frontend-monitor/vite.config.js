@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://127.0.0.1:5000', // Aquí conectamos con tu Flask
+      '/api': 'http://127.0.0.1:5000',
+      '/send_message': 'http://127.0.0.1:5000' 
     }
   }
 })

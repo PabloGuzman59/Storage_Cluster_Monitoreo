@@ -239,11 +239,8 @@ class StorageClusterServer:
             conn.close()
         except Exception:
             pass
-
-    # ── Watchdog: detecta nodos inactivos ─────────────────
-    def _watchdog(self):
-        """Revisa periódicamente qué clientes dejaron de reportar."""
-        log.info("Watchdog iniciado.")
+def _watchdog(self):
+        log.info("Watchdog inteligente iniciado.")
         while self.running:
             time.sleep(CONFIG["server"]["watchdog_interval"])
             now = time.time()
@@ -252,10 +249,25 @@ class StorageClusterServer:
 
             for cid, info in snapshot.items():
                 elapsed = now - info.get("last_seen", now)
+                
+                # Alerta por desconexión
                 if elapsed > self.timeout_seconds:
-                    log.warning(f"[WATCHDOG] Nodo '{cid}' sin reportar por {elapsed:.0f}s → 'No Reporta'")
+                    log.error(f"[CRITICAL] Nodo '{cid}' ha perdido conexión.")
                     self.db.update_node_status(cid, "no_reporta")
+                    continue 
 
+                # Alerta por disco lleno (Tu prueba del 45%)
+                metrics = info.get("last_metrics", {})
+                utilization = float(metrics.get("utilization", 0))
+
+                if utilization > 45.0:
+                    msg_auto = f"AVISO AUTOMÁTICO: Uso de disco crítico ({utilization}%)."
+                    
+                    # ESTO ES LO QUE APARECERÁ EN EL FRONTEND:
+                    log.warning(f"[ALERTA] Nodo {cid} superó el 45% de uso. Enviando orden.")
+                    
+                    # ESTO LLEGA AL CLIENTE (client.log):
+                    self.send_message_to_client(cid, msg_auto)
     # ── Utilidades para el dashboard ──────────────────────
     def get_cluster_summary(self) -> dict:
         return self.db.get_cluster_summary()
